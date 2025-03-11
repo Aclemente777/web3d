@@ -14,7 +14,7 @@
     <a-scene mindar-image="imageTargetSrc: mamo.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
         <a-assets>
             <a-asset-item id="nowally" src="jerry.glb"></a-asset-item>
-            <a-asset-item id="wally" src="wally.png"></a-asset-item>
+            <img id="Wally" src="wally.png" /> 
         </a-assets>
         <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
         <a-entity mindar-image-target="targetIndex: 0">
@@ -33,7 +33,7 @@
                 rotation="90 0 0"
                 animation-mixer ="clip: flair_1_" >
             </a-gltf-model>
-            
+
         </a-entity>
         <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
         <a-entity mindar-image-target="targetIndex: 2">
