@@ -1,0 +1,67 @@
+<html>
+ <head>
+   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+   <script>
+    AFRAME.registerComponent("mylink", {
+    init: function() {  
+     this.el.addEventListener("click", (e) => {              
+        window.location = this.data.href;      
+       })
+    }
+  })
+</script>
+ </head>
+ <body>
+  <a-scene cursor="rayOrigin: mouse">
+   <a-assets>
+     <img id="imgSortida" src="assets/entragroc.png" >
+     <img id="imgFantasma" src="assets/fantasma.png" >
+     <img id="imgCasa" src="assets/casadelsusto.jpg" >
+     <img id="fuera" src="assets/salir.jpg" >
+     <img id="cara" src="assets/vegetta.jpeg" >
+
+
+     <a-asset-item id="fantasma" src="assets/fantasma2/scene.gltf"></a-asset-item>
+     <a-asset-item id="bat" src="assets/bat/scene.gltf"></a-asset-item>
+
+  </a-assets>  
+ 
+      <a-entity camera look-controls wasd-controls="false">
+        <!-- fuseTimeout = el temps que triga en fer click des de que es posiciona sobre un objecte-->
+         <a-entity cursor="fuse: true; fuseTimeout: 2000"
+               position="0 0 -1"
+               geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+               material="color: red; shader: flat"
+               animation="property: components.material.material.color;
+                     type: color;
+                     to: white;
+                     dur: 1000;
+                     dir: alternate;
+                     loop: true">
+         </a-entity>
+        </a-entity>
+
+    <a-sky src="#imgCasa"></a-sky>      
+      </a-sphere>
+      <a-plane position="-62.812 1.816 13.033" radius="1" scale="2 2 4" rotation="0 100 0" transparent="true" src="#fuera" mylink="href: https://aclemente777.github.io/web3d/"
+        animation="property: position; dur: 1000; from: -62.812 1.816 13.033; to: -55 1.816 11.033; dir: alternate; loop: true"> 
+      </a-plane>
+      <a-entity gltf-model="#fantasma" position="-3 -0.6 -400" scale="2.5 2.5 2.5" 
+      animation="property: position; dur: 3000; from: -3 0.6 -400; to: -3 0.6 -2; dir: alternate; loop: true">   
+    </a-entity>
+    <a-entity gltf-model="#bat" rotation="0 -71 0" position="4 2.723 -1.343" scale="2 2 2"      
+    animation="property: position; dur: 3000; from: 4 1.5 -0.7; to: -8.409 1.500 1.358; dir: alternate; loop: true">   
+    </a-entity>
+
+    <a-entity gltf-model="#bat" rotation="0 -71 0" position="4 0.722 0.421" scale="2 2 2"      
+    animation="property: position; dur: 3000; from: 4 0.722 0.421; to: -8.409 1.500 1.358; dir: alternate; loop: true">   
+    </a-entity>
+    
+    <a-entity gltf-model="#bat" rotation="0 -71 0" position="4 0.760 -1.656" scale="2 2 2"      
+    animation="property: position; dur: 3000; from: 4 4 0.760 -1.656; to: -8.409 1.500 1.358; dir: alternate; loop: true"></a-entity>
+    <a-plane position="12.447 2.874 84.863" radius="1" scale="2 2 4" rotation="0 180 0" transparent="true" src="#cara" 
+    animation="property: rotation; dur: 1000; to: 0 0 360; dir: alternate; loop: true"></a-plane>
+
+   </a-scene>
+ </body>
+</html>
