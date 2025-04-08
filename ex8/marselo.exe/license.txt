@@ -1,0 +1,11 @@
+Model Information:
+* title:	Marselo.exe
+* source:	https://sketchfab.com/3d-models/marseloexe-8f5e71c1ebe34348b4d0700e02b3eaa7
+* author:	Mike BlueG (https://sketchfab.com/mikeblueg)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Marselo.exe" (https://sketchfab.com/3d-models/marseloexe-8f5e71c1ebe34348b4d0700e02b3eaa7) by Mike BlueG (https://sketchfab.com/mikeblueg) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
